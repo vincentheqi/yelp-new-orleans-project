@@ -5,3 +5,4 @@
 data/raw/
 *.zip
 *.tar
+data/new_orleans/reviews_new_orleans.rds
