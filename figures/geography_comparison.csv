@@ -1,0 +1,4 @@
+geographic_system,number_of_areas,areas_with_restaurants,restaurants_assigned,unmatched_restaurants,extra_matches,smallest_area_count,largest_area_count,median_area_count,areas_with_5_or_more
+ZIP/ZCTA,20,17,658,0,0,2,214,16,16
+Census tract,184,111,658,0,0,1,113,2,29
+Neighborhood Statistical Area,72,56,658,0,0,1,164,5,30
