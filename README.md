@@ -21,7 +21,7 @@ I analyzed 658 seafood, Cajun/Creole, Southern, and soul food restaurants inside
 ### Top 10 restaurants (reviewer-adjusted)
 
 | Rank | Restaurant | Neighborhood | Avg. stars (all reviewers) | Adjusted score |
-|--------------:|---------------|---------------|--------------:|--------------:|
+|---:|----|----|---:|---:|
 | 1 | Tito's Ceviche & Pisco | Uptown | 4.72 | +0.59 |
 | 2 | Avery's On Tulane | Tulane–Gravier | 4.64 | +0.59 |
 | 3 | Meauxbar | Vieux Carré (French Quarter) | 4.40 | +0.58 |
@@ -79,7 +79,7 @@ yelp-new-orleans-project/
 
 1.  Download the JSON dataset from the [Yelp Open Dataset page](https://business.yelp.com/data/resources/open-dataset/) and extract it.
 2.  Place `yelp_academic_dataset_business.json` and `yelp_academic_dataset_review.json` in `data/raw/`.
-3.  Install the exact package versions used, recorded in \`renv.lock\`: run \`install.packages("renv")\` then \`renv::restore()\`. (Or install the main packages directly: \`install.packages(c("tidyverse", "jsonlite", "sf", "tigris", "ggrepel", "knitr"))\`.)
+3.  Install the exact package versions used, recorded in `renv.lock`: run `install.packages("renv")` then `renv::restore()`. (Or install the main packages directly: `install.packages(c("tidyverse", "jsonlite", "sf", "tigris", "ggrepel", "knitr"))`.)
 4.  Run the scripts in order: `R/import.R` → `R/categories.R` → `R/geography.R` → `R/ratings.R`. `geography.R` needs internet access to download Census and City of New Orleans boundaries.
 5.  Render the report: `quarto render yelp_new_orleans_project.qmd --output-dir docs`
 
