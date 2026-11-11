@@ -24,7 +24,7 @@
 
 ## 3. Fixing an error: `print(n = 30)` on a data frame
 
-**My prompt:** I pasted the error: \> `Error in print.default(m, ...) : invalid 'na.print' specification`
+**My prompt:** I pasted the error: `Error in print.default(m, ...) : invalid 'na.print' specification`
 
 **What happened:** The AI explained that `stream_in()` returns a plain `data.frame`, not a tibble, and `print(n = ...)` only works on tibbles. The fix was adding `as_tibble()` right after import.
 
