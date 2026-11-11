@@ -41,7 +41,7 @@
 My maps took several rounds of fixes, each driven by me sending a screenshot back:
 
 | What I saw | What was wrong | Fix |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Map title cut off | Title too long for the plot width | Shortened the title |
 | Every area except one looked the same pale color | One neighborhood had 164 restaurants, so a linear color scale flattened everything else | Log color scale with clear breaks |
 | The census tract map was black when I viewed it | `theme_void()` draws no background, so the PNG was transparent | `ggsave(..., bg = "white")` |

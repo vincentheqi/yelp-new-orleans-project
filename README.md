@@ -1,5 +1,7 @@
 # Where to Find the Best Seafood & Creole Food in New Orleans
 
+![R](https://img.shields.io/badge/R-4.6.1-276DC3?logo=r&logoColor=white) ![Quarto](https://img.shields.io/badge/Quarto-report-39729E?logo=quarto&logoColor=white) ![sf](https://img.shields.io/badge/spatial-sf%20%7C%20tigris-2E8B57) [![Report](https://img.shields.io/badge/report-live-success)](https://vincentheqi.github.io/yelp-new-orleans-project/)
+
 [**📄 View the complete report**](https://vincentheqi.github.io/yelp-new-orleans-project/): a rendered HTML report with all tables, maps, and code (no setup needed).
 
 ## Research question
