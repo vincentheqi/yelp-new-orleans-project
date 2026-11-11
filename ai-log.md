@@ -47,7 +47,7 @@ My maps took several rounds of fixes, each driven by me sending a screenshot bac
 
 **Lesson:** I could only catch these by actually looking at every saved figure, not just trusting that the code ran.
 
-## 6. Catching an bug: `NA` values in a summary column
+## 6. Catching a bug: `NA` values in a summary column
 
 **My prompt:** I pasted the neighborhood table. Several neighborhoods showed `NA` in `pct_above_norm`, including the French Quarter, which has 118 rankable restaurants.
 
