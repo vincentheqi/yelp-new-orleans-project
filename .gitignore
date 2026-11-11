@@ -8,3 +8,5 @@ data/raw/
 data/new_orleans/reviews_new_orleans.rds
 .DS_Store
 .RDataTmp
+/.quarto/
+**/*.quarto_ipynb
