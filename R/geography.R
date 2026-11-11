@@ -177,3 +177,16 @@ nsa_result$by_area |>
 
 write_csv(geography_comparison, "figures/geography_comparison.csv")
 
+
+# save area assignments and boundaries for later scripts and the report
+nsa_result$joined |>
+  st_drop_geometry() |>
+  select(business_id, nsa_name = area_name) |>
+  left_join(zcta_result$joined |> st_drop_geometry() |> select(business_id, zcta = area_id),
+            by = "business_id") |>
+  saveRDS("data/new_orleans/restaurant_areas.rds")
+
+saveRDS(nsa_nola,             "data/new_orleans/nsa_boundaries.rds")
+saveRDS(zctas_la,             "data/new_orleans/zcta_boundaries.rds")
+saveRDS(new_orleans_boundary, "data/new_orleans/new_orleans_boundary.rds")
+
