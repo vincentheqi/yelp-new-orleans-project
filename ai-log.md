@@ -6,7 +6,9 @@
 
 ## 1. Understanding the assignment before writing code
 
-**My prompt:** \> "do not do anything yet just read and understand the project"
+**My prompt:**
+
+> "do not do anything yet just read and understand the project"
 
 **What happened:** The AI summarized the project as a pipeline (import → filter → categories → join → spatial join → geography comparison → reviewer adjustment) and flagged risks before any coding: the review file's memory size, keeping raw data off GitHub, and that the New Orleans neighborhood layers come from the City, not `tigris`.
 
@@ -39,7 +41,7 @@
 My maps took several rounds of fixes, each driven by me sending a screenshot back:
 
 | What I saw | What was wrong | Fix |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Map title cut off | Title too long for the plot width | Shortened the title |
 | Every area except one looked the same pale color | One neighborhood had 164 restaurants, so a linear color scale flattened everything else | Log color scale with clear breaks |
 | The census tract map was black when I viewed it | `theme_void()` draws no background, so the PNG was transparent | `ggsave(..., bg = "white")` |
